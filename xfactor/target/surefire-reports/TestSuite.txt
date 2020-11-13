@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 33, Failures: 4, Errors: 0, Skipped: 29, Time elapsed: 4.065 s <<< FAILURE! - in TestSuite
+com.xfactor.test.LoginTest.preTest  Time elapsed: 2.76 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/apache/http/HttpRequest
+Caused by: java.lang.ClassNotFoundException: org.apache.http.HttpRequest
+
+com.xfactor.test.AboutUsTest.preTest  Time elapsed: 0.635 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/apache/http/HttpRequest
+Caused by: java.lang.ClassNotFoundException: org.apache.http.HttpRequest
+
+com.xfactor.test.MyProfileTest.preTest  Time elapsed: 0.134 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/apache/http/HttpRequest
+Caused by: java.lang.ClassNotFoundException: org.apache.http.HttpRequest
+
+com.xfactor.test.MyXfactorHomeTest.preTest  Time elapsed: 0.086 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/apache/http/HttpRequest
+Caused by: java.lang.ClassNotFoundException: org.apache.http.HttpRequest
+

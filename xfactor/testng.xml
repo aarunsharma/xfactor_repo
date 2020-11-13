@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.xfactor.generics.XFactorListener"></listener>
+	</listeners>
+	<test name="Login" preserve-order="true" enabled="true">
+		<classes>
+			<class name="com.xfactor.test.LoginTest"></class>
+		</classes>
+	</test>
+	<test name="AboutUs" preserve-order="true" enabled="true">
+		<classes>
+			<class name="com.xfactor.test.AboutUsTest"></class>
+		</classes>
+	</test>
+
+	<test name="MyProfile" preserve-order="true" enabled="true">
+		<classes>
+			<class name="com.xfactor.test.MyProfileTest"></class>
+		</classes>
+	</test>
+	
+	<test name="MyXfactorHome" preserve-order="true" enabled="true">
+		<classes>
+			<class name="com.xfactor.test.MyXfactorHomeTest"></class>
+		</classes>
+	</test>
+</suite> 

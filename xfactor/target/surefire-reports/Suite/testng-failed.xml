@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.xfactor.generics.XFactorListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Login(failed)">
+    <classes>
+      <class name="com.xfactor.test.LoginTest">
+        <methods>
+          <include name="loginWithInvalidUsernameAndPassword"/>
+          <include name="loginWithValidCredentials"/>
+          <include name="teardown"/>
+          <include name="preCondition"/>
+          <include name="loginWithInvalidUsername_logout"/>
+          <include name="loginWithInvalidPassword"/>
+          <include name="preTest"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.xfactor.test.LoginTest -->
+    </classes>
+  </test> <!-- Login(failed) -->
+  <test thread-count="5" verbose="0" name="AboutUs(failed)">
+    <classes>
+      <class name="com.xfactor.test.AboutUsTest">
+        <methods>
+          <include name="displayEnduserTerms"/>
+          <include name="displayFAQPage"/>
+          <include name="teardown"/>
+          <include name="preCondition"/>
+          <include name="filterFAQsAccordingToCategories"/>
+          <include name="preTest"/>
+          <include name="contactUs"/>
+          <include name="postCondition"/>
+          <include name="displayAboutUsPage"/>
+        </methods>
+      </class> <!-- com.xfactor.test.AboutUsTest -->
+    </classes>
+  </test> <!-- AboutUs(failed) -->
+  <test thread-count="5" verbose="0" name="MyProfile(failed)">
+    <classes>
+      <class name="com.xfactor.test.MyProfileTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="preCondition"/>
+          <include name="preTest"/>
+          <include name="displayMyProfilePage"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.xfactor.test.MyProfileTest -->
+    </classes>
+  </test> <!-- MyProfile(failed) -->
+  <test thread-count="5" verbose="0" name="MyXfactorHome(failed)">
+    <classes>
+      <class name="com.xfactor.test.MyXfactorHomeTest">
+        <methods>
+          <include name="searchingAllHistoricOpportunitiesByCategory"/>
+          <include name="teardown"/>
+          <include name="preCondition"/>
+          <include name="searchingAllHistoricOpportunitiesBySource"/>
+          <include name="displayXfactorHomePage"/>
+          <include name="preTest"/>
+          <include name="postCondition"/>
+          <include name="searchingAllActiveOpportunitiesBySource"/>
+          <include name="searchingAllOpportunitiesByCategory"/>
+          <include name="searchingAllActiveOpportunitiesByCategory"/>
+          <include name="searchingAllOpportunitiesBySource"/>
+        </methods>
+      </class> <!-- com.xfactor.test.MyXfactorHomeTest -->
+    </classes>
+  </test> <!-- MyXfactorHome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
